@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toko Parfum — Mockup</title>
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --card:#ffffff;
+      --muted:#bdbdbd;
+      --accent:#111111;
+      --container-width:380px;
+      --radius:18px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    body{
+      background: var(--bg);
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:20px;
+      box-sizing:border-box;
+    }
+    /* phone like frame */
+    .phone{
+      width:var(--container-width);
+      background:linear-gradient(180deg,#ffffff,#f4f4f4);
+      border-radius:26px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.6);
+      overflow:hidden;
+      border:8px solid #efefef;
+    }
+
+    header.banner{
+      position:relative;
+      height:120px;
+      background:#222;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+    }
+    header.banner img{
+      object-fit:cover;
+      width:100%;
+      height:100%;
+      display:block;
+    }
+    .logo-wrap{
+      position:absolute;
+      top:12px;
+      left:14px;
+      color:#111;
+      background:rgba(255,255,255,0.85);
+      padding:6px 10px;
+      border-radius:6px;
+      font-weight:700;
+      font-size:18px;
+      letter-spacing:2px;
+    }
+
+    main{
+      padding:14px;
+    }
+    h1.title{
+      text-align:center;
+      font-size:18px;
+      margin:6px 0 12px 0;
+      letter-spacing:1px;
+      font-weight:700;
+    }
+
+    .search{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      margin-bottom:12px;
+    }
+    .search input{
+      flex:1;
+      padding:8px 12px;
+      border-radius:8px;
+      border:1px solid #ddd;
+      font-size:14px;
+      box-sizing:border-box;
+    }
+    .search button{
+      padding:8px 10px;
+      border-radius:8px;
+      border:none;
+      background:#111;
+      color:#fff;
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    .banners{
+      display:flex;
+      gap:8px;
+      margin-bottom:12px;
+    }
+    .banner-item{
+      flex:1;
+      padding:10px 8px;
+      border-radius:8px;
+      background:linear-gradient(90deg,#111,#444);
+      color:#fff;
+      font-weight:700;
+      text-align:center;
+      font-size:12px;
+    }
+
+    .product-list{display:flex;flex-direction:column;gap:12px}
+    .card{
+      background:linear-gradient(180deg,#ffffff,#fbfbfb);
+      border-radius:10px;
+      padding:10px;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      box-shadow:0 2px 0 rgba(0,0,0,0.06) inset;
+    }
+    .thumb{
+      width:68px;
+      height:68px;
+      border-radius:8px;
+      background:#f0f0f0;
+      display:flex;align-items:center;justify-content:center;overflow:hidden;
+      flex-shrink:0;
+    }
+    .thumb img{width:100%;height:100%;object-fit:contain}
+    .meta{flex:1}
+    .meta .name{font-weight:700;font-size:13px;margin-bottom:4px}
+    .meta .size{font-size:11px;color:var(--muted);margin-bottom:6px}
+    .price{font-weight:800;text-align:right;font-size:14px}
+    .controls{display:flex;gap:6px;margin-top:8px}
+
+    .btn{
+      border-radius:6px;
+      padding:7px 8px;
+      font-weight:700;
+      font-size:12px;
+      border:1px solid #111;
+      background:#111;
+      color:#fff;
+      cursor:pointer;
+    }
+    .icon-btn{
+      display:inline-flex;align-items:center;justify-content:center;padding:7px;width:36px;height:36px;border-radius:6px;border:1px solid #111;background:#fff;color:#111;cursor:pointer
+    }
+
+    .price small{display:block;font-weight:400;color:var(--muted);font-size:11px}
+
+    .section-band{background:linear-gradient(90deg,#e6e6e6,#cfcfcf);padding:6px;border-radius:8px;margin-bottom:10px;text-align:center;font-weight:700}
+
+    footer{height:12px}
+
+    @media (max-width:420px){
+      :root{--container-width:360px}
+    }
+  </style>
+</head>
+<body>
+  <div class="phone" role="application">
+    <header class="banner">
+      <img src="C:\Users\ASUS\Documents\tugas\K6.jpg" alt="banner" />
+      <div class="logo-wrap">GK</div>
+    </header>
+
+    <main>
+      <h1 class="title">THE PRODUCT</h1>
+
+      <div class="search">
+        <input type="search" placeholder="Cari produk, mis: Yves Saint Laurent" />
+        <button>Search</button>
+      </div>
+
+      <div class="banners">
+        <div class="banner-item">DISKON 50%</div>
+        <div class="banner-item">PRODUK TERBARU</div>
+      </div>
+
+      <div class="product-list">
+        <div class="card">
+          <div class="thumb"><img src="C:\Users\ASUS\Documents\tugas\K1.jpg" alt="product"></div>
+          <div class="meta">
+            <div class="name">Yves Saint Laurent Y Eau de Parfum</div>
+            <div class="size">40ml • 5</div>
+            <div class="controls">
+              <button class="btn">PAYMENT</button>
+              <button class="icon-btn" title="Keranjang">🧺</button>
+              <button class="icon-btn" title="Email">✉️</button>
+            </div>
+          </div>
+          <div class="price">
+            <small>Rp. 1.800.000</small>
+            Rp. 1.750.000
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="thumb"><img src="C:\Users\ASUS\Documents\tugas\K2.jpg" alt="product"></div>
+          <div class="meta">
+            <div class="name">Yves Saint Laurent La Nuit De L'Homme</div>
+            <div class="size">60ml • 7</div>
+            <div class="controls">
+              <button class="btn">PAYMENT</button>
+              <button class="icon-btn" title="Keranjang">🧺</button>
+              <button class="icon-btn" title="Email">✉️</button>
+            </div>
+          </div>
+          <div class="price">
+            <small>Rp. 2.350.000</small>
+            Rp. 2.248.000
+          </div>
+        </div>
+
+        
+        <div class="card">
+          <div class="thumb"><img src="C:\Users\ASUS\Documents\tugas\K3.jpg" alt="product"></div>
+          <div class="meta">
+            <div class="name">Libre Eau de Parfum</div>
+            <div class="size">50ml • 2</div>
+            <div class="controls">
+              <button class="btn">PAYMENT</button>
+              <button class="icon-btn" title="Keranjang">🧺</button>
+              <button class="icon-btn" title="Email">✉️</button>
+            </div>
+          </div>
+          <div class="price">
+            <small>Rp. 2.045.000</small>
+            Rp. 1.925.000
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="thumb"><img src="C:\Users\ASUS\Documents\tugas\K4.jpg" alt="product"></div>
+          <div class="meta">
+            <div class="name">Yves Saint Laurent Libre L'Absolu Platine</div>
+            <div class="size">50ml • 3</div>
+            <div class="controls">
+              <button class="btn">PAYMENT</button>
+              <button class="icon-btn" title="Keranjang">🧺</button>
+              <button class="icon-btn" title="Email">✉️</button>
+            </div>
+          </div>
+          <div class="price">
+            <small>Rp. 2.100.000</small>
+            Rp. 2.045.000
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <footer></footer>
+  </div>
+</body>
+</html>
